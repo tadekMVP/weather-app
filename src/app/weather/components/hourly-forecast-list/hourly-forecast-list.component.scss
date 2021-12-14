@@ -1,0 +1,27 @@
+@import 'src/styles';
+
+.forecast-list {
+  display: flex;
+  overflow-x: scroll;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  .forecast-list-item {
+    padding: 25px;
+    .main-label {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .tile {
+      white-space: nowrap;
+      display: flex;
+      .label {
+        width: 100px;
+        color: $black-500;
+      }
+    }
+  }
+}
+

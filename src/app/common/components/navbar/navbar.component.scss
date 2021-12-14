@@ -1,0 +1,22 @@
+@import 'src/styles';
+
+.nav {
+  box-shadow: 0 0 0 1px $black-100;
+  background-color: $brand-color;
+  padding: 10px 45px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  color: $white;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  .nav-content {
+    max-width: $container-width;
+    margin: 0 auto;
+  }
+  .nav-title {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+  }
+}

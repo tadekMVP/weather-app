@@ -1,0 +1,15 @@
+<ul class="forecast-list">
+  <li *ngFor="let item of hourlyForecast; index as i"  class="forecast-list-item">
+    <div class="main-label">
+      {{hoursArray[i]}}
+    </div>
+    <div class="tile">
+      <span class="label">Temperature:</span>
+      <span class="value">{{item.temp  | number:'1.0-0'}} °C</span>
+    </div>
+    <div class="tile">
+      <span class="label">Wind Speed:</span>
+      <span class="value">{{item.wind_speed}} m/sec</span>
+    </div>
+  </li>
+</ul>

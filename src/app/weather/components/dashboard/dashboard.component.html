@@ -1,0 +1,19 @@
+<mat-card>
+  <mat-accordion>
+    <mat-expansion-panel *ngFor="let location of locations">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{location.name}}
+        </mat-panel-title>
+        <mat-panel-description *ngIf="currentWeatherMap[location.id]">
+
+          <app-current-weather [weatherData]="currentWeatherMap[location.id]"></app-current-weather>
+
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <ng-template  matExpansionPanelContent>
+        <forecast *ngIf="currentWeatherMap[location.id]" [locationCoords]="location.coord" [weatherData]="currentWeatherMap[location.id]"></forecast>
+      </ng-template>
+    </mat-expansion-panel>
+  </mat-accordion>
+</mat-card>

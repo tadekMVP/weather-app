@@ -1,0 +1,9 @@
+@import 'src/styles';
+
+.layout {
+  max-width: $container-width;
+  margin: 0 auto;
+}
+.outlet {
+  padding-top: 60px;
+}

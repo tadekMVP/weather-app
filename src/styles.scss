@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@import './variables';
+
+body {
+  margin: 0;
+}
+
+.link {
+ text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: $black;
+  width: fit-content;
+}
